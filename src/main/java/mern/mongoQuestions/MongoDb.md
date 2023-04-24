@@ -101,5 +101,5 @@ db.customers.find({ state: { $in: ["California", "Texas", "New York"] } })
 - The aggregation pipeline is a powerful feature of MongoDB that allows you to perform complex data processing and analysis operations on your collections. By using the aggregation pipeline, you can reduce the amount of data that needs to be transferred between your application and the database, and you can perform data processing operations directly in the database, which can improve performance and scalability.
 ## 19. What is indexing in MongoDB?
 - 
-## 20. What is the use of the text index in MongoDB?
+## 20. What is the use of the text index in MongoDB? 
 
