@@ -2,7 +2,7 @@
 - JavaScript is a high-level programming language that commonly used for interactive webpages and web applications
 - js developed by Brendan Eich in 1995
 - JavaScript supports client side scripting language and also server-side applications
-- Js is a single threaded synchronous 
+- Js is a single threaded synchronous language
 ## 2. What are the data types in JavaScript?
 - Js has 6 primitive datatypes :Boolean,Number,String,Null,Undefined,Symbol 
 - and non-primitive Object
@@ -37,8 +37,10 @@ varibales with var are redeclared with in the same scope otherhand let and const
 - it means that it does give error
 - but if it is let variable it give the referenceError 
 ## 7. What is closure in JavaScript?
-- Closure is a function that binds lexical environment  
-- 
+- Closure is a function with  lexical scope bundle together  
+- we use closure for data hiding 
+- advantages: Encapsulation,Persistence,Memory Efficiency
+- disadvantage : Performance, Complexity,Memory Leaks
 ## 8. What is a callback function in JavaScript?
 ## 9. What is the difference between synchronous and asynchronous code in JavaScript?
 ## 10. What is the difference between == and === in JavaScript?
@@ -129,3 +131,21 @@ var b=function c(){
     console.log('Byeee') 
 }
 ```
+## 29.What is Callback function in js and uses?
+-  Functions are single citizens in js
+- when we call a function and then pass a other function to it ,it is called callback function
+````javascript
+function a(){
+    
+}
+a(function b(){
+    
+})
+````
+- with the use of callback function we can achieve the asynchrnous 
+- Callback Queue also called Task Queue 
+## 30. What are goes to Microtask Queue?
+- The callback function comes from the promise and mutation observor will go to the Microsoft Queue
+- Microtask Queue has the Priority compared to the Callback Queue
+##  31. WHat is Starvation in Js?
+- when Microtask queue occupied with the callback functions to go into call stack and callback queue doesn't get chance to getinto call stack this is called Starvation
